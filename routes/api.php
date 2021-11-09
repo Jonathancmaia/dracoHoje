@@ -13,3 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('getDracoDaily', 'DracoController@getDracoDaily');
+Route::get('getDracoWeekly', 'DracoController@getDracoWeekly');
+Route::get('getDracoMonthly', 'DracoController@getDracoMonthly');
+Route::get('getDracoAll', 'DracoController@getDracoAll');
