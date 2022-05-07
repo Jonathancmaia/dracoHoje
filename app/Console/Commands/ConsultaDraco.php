@@ -50,8 +50,12 @@ class ConsultaDraco extends Command
 
         $draco = new Draco;
         $draco->value = $response;
-        $draco->save();
-        
-        exit;
+
+        if ($draco->value != 0 || $draco->value != null){
+            $draco->save();
+            exit;
+        } else {
+            exit;
+        }
     }
 }
